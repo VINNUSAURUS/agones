@@ -249,7 +249,6 @@ func handleResponse(txt string, s *sdk.SDK, cancel context.CancelFunc) (response
 	case "CRASH":
 		log.Print("Crashing.")
 		os.Exit(1)
-		return "", false, nil
 
 	case "ANNOTATION":
 		switch len(parts) {
